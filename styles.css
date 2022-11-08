@@ -217,4 +217,11 @@ body {
     font-size: 1.5rem;
   }
 
+  #player {
+    width: 50%;
+    min-width: 50%;
+    margin-inline-start: 0;
+    padding-left: 40px;
+  }
+
 
