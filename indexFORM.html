@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <style>
+        body {
+            background-color: #5F9EA0;
+        }
         h1 {
   text-align: center;
   margin: 35px 0 20px 0 !important;
@@ -25,11 +28,12 @@
    </form>
    <div class="container">
     <h1>Send an Email!</h1>
-    <form target="_blank" action="https://formsubmit.co/00919ff52ccd9dac617fdffefd78639a" method="POST">
+    <form action="https://formsubmit.co/00919ff52ccd9dac617fdffefd78639a" method="POST">
       <div class="form-group">
         <div class="form-row">
           <div class="col">
-            <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+            <input type="hidden" name="subject" value="New email for you!">
+            <input type="text" name="name" class="form-control" placeholder="Name" required>
           </div>
           <div class="col">
             <input type="email" name="email" class="form-control" placeholder="Email Address" required>
