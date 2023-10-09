@@ -15,13 +15,13 @@
     <button onclick="topFunction()" id="myBtn" title="Go to top">Back to the Top</button>
     <header>
       <nav>
-        <h1>Nicky Kirkendoll</h1>
-        <ul>
+       
+       <!--<ul>
           <li><a href="https://github.com/Kirkendolled">GitHub</a></li>
           <li><a href="NK Front End Develop.pdf">Resume</a></li>
           <li><a href="https://www.linkedin.com/in/nicky-kirkendoll-116a0895">LinkedIn</a></li>
           <li><a href="indexFORM.html">Contact</a></li>
-        </ul>
+        </ul>-->
       </nav>
       <div class="controls">
         <label class="toggle-switch">
@@ -33,20 +33,23 @@
         </label>
       </div>
     </header>
-
+    <div class="section section1">
     <section class="bio">
-      <img class="profile-img" src="Photography.jpg" />
+      <img class="profile-img" src="Professonal Nicky.jpeg" />
       <div>
-        <h2>Hello!</h2> 
-        <h2> My name is Nicky, and I’m a front end web developer.</h2>
+       <h1> My name is Nicky, and I’m a front end web developer.</h1>
         <p>
-          I’m new to the industry but not to hard work. I have experience and
-          interest in front end web design (HTML, CSS & JS). In my free time I enjoy reading, traveling, roller skating, and taking pictures of my pets.
+          Passionate about creating engaging digital experiences, I have recently transitioned into the exciting field of front-end web development. <br> <br>With over 20 years of experience in auditing and administration, I have built a strong reputation as a highly efficient and quality-focused professional. Throughout my career, I have excelled in roles such as an auditor, team lead, and quality/investor relations specialist, honing my ability to deliver exceptional results in fast-paced environments.
+
+          <br> <br>In my current role as a project manager, I combine my expertise in project management with my front-end web development skills to deliver outstanding results. I have successfully managed 3 projects from inception to completion, ensuring timely delivery while maintaining the highest standards of quality. I have designed these websites leveraging my technical proficiency in HTML, CSS, and JavaScript to create visually appealing and user-friendly online platforms.
+          
+          <br> <br> Drawing upon my extensive experience and passion for front-end web development, I continually expand my skills to stay at the forefront of industry trends. I am a self-motivated learner, constantly seeking new opportunities to enhance my technical expertise and deliver innovative solutions. With a keen eye for detail, strong problem-solving abilities, and a dedication to exceptional client experiences, I am committed to achieving the best possible outcomes in project management and front-end web development.
         </p>
-        <a class="btn" href="NK Front End Develop.pdf">Resume</a>
+        <a class="btn" href="Resume.pdf">Resume</a>
       </div>
     </section>
-
+  </div>
+  <div class="section section2">
     <section class="recent-work">
       <h2>Recent Work</h2>
 
@@ -72,8 +75,8 @@
         </div>
         
     </article>
-    
-
+  </div>
+  <div class="section section3">
       <article>
         <div>
             <h3>The Deed Factory</h3>
@@ -101,11 +104,12 @@
             </ul>
             
         </div>
-        <video width="400" height="320" controls>
+        <video class="padded-video" width="400" height="320" controls>
           <source src="Videos/Final The Deed Factory portfolio.mp4" type="video/mp4">
     </article>
-    
+    </div>
 
+<div class="section section4">
       <article>
         <div>
             <h3>Cultivated Mental Health</h3>
@@ -129,23 +133,22 @@
             </ul>
             <a href="https://www.cepursuits.com">Visit Website</a>
         </div>
-        <video width="400" height="320" controls>
+        <video class="padded-video2"width="400" height="320" controls>
           <source src="Videos/CMH Portfolio video.mp4" type="video/mp4">
     </article>   
     </section>
-    <section class="family-slideshow">
-      <h2>Meet my family</h2>
-      <div class="slideshow-container">
-          <div class="slide">
-              <img src="Slides/Brutie.jpg" alt="slideshow image">
-          </div>
-          <!-- You can add more <div class="slide">...</div> blocks for additional images -->
-  
-          <a href="#" class="prev">&#10094;</a>
-          <a href="#" class="next">&#10095;</a>
-      </div>
+    </div>
+    <div class="section section5">
+  <section>
+<h4>Meet my family</h4>
+    <p id="picScroll"></p>
+    <div id="content">
+      <img src="Slides/Chadow 1.jpg" alt="slideshow image" id="myimage">
+  </div>
+   <p id="links"><a href="#" id="previous">Previous</a><b> </b>
+  <a href="#" id="next">Next</a></p>
   </section>
-  
+</div>
 
     <footer>
       <ul>
@@ -158,7 +161,7 @@
           </a>
         </li>
         <li>
-          <a href="NK Front End Develop.pdf">
+          <a href="Resume.pdf">
             Resume
             <span class="link-icon">
               <i class="fa-solid fa-user"></i>
@@ -174,7 +177,7 @@
           </a>
         </li>
       </ul>
-      <p class="copywright">© 2022 Nicky Kirkendoll</p>
+      <p class="copywright">© 2023 Nicky Kirkendoll</p>
     </footer>
     <script src="script.js"></script>
   </body>

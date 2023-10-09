@@ -49,7 +49,7 @@ function topFunction() {
 // ---------------------------------------------
 // Slideshow Functionality
 // ---------------------------------------------
-const currentImage = 0;
+let currentImage = 0;
 const myPhotos = ['Chadow 1.jpg', 'Leo 1.jpg', 'Sissy 1.jpg', 'Brutie.jpg', 'The crew.jpg'];
 const container = document.getElementById('content');
 const nextBtn = document.getElementById('next');
@@ -75,15 +75,25 @@ function updateImage(increment) {
 
   const newSlide = document.createElement('img');
   newSlide.src = `Slides/${myPhotos[currentImage]}`;
-  newSlide.className = 'fadeinimg';
+  newSlide.className = 'fadeinimg slide-image'; // Added slide-image class
   container.appendChild(newSlide);
 
-  if (container.children.length > 2) {
-      container.removeChild(container.children[0]);
-  }
+  if (container.children.length > 1) {
+    container.removeChild(container.children[0]);
+}
+
 }
 
 // If you don't use the YouTube functionality or other specific functionalities in your website, you can safely remove them from this file.
 
+document.querySelector('.prev').addEventListener('click', function(event) {
+  event.preventDefault();
+  // Your previous button code here
+});
+
+document.querySelector('.next').addEventListener('click', function(event) {
+  event.preventDefault();
+  // Your next button code here
+});
 
         

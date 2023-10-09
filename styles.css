@@ -2,7 +2,7 @@
   --dark-background: #253a52;
   --dark-primary: #FFFFE3;
   --dark-link: #A9FE75;
-  --light-background: #abd1c6;
+  --light-background: #ceffff;
   --light-primary: #253a52;
   --light-link: #1348da;
   --background: var(--light-background);
@@ -26,6 +26,88 @@ a {
   color: var(--link);
 }
 
+/*.section1 {
+  
+  box-shadow: 5px 5px 4px 6px rgba(138, 0, 0, 0.5); /* subtle shadow *//*
+  padding: 30px;
+}
+
+.section {
+  padding: 30px;
+  transition: box-shadow 0.3s ease; 
+  margin-bottom: 40px; 
+  border-radius: 8px; 
+}
+
+.section1 {
+  background-color: #f9f2f2; 
+  box-shadow: 3px 3px 10px rgba(138, 0, 0, 0.3);
+}
+
+.section2 {
+  
+  box-shadow: 5px 0px 0px 6px  rgba(222, 142, 12, 0.5); 
+  padding: 30px;
+}
+.section3 {
+  
+  box-shadow: 5px 5px 4px 5px  rgba(221, 255, 1, 0.5); 
+  padding: 30px;
+}
+.section4 {
+ 
+  box-shadow: 5px 5px 4px 6px  rgba(2, 137, 22, 0.47); 
+  padding: 30px;
+}
+.section5 {
+ 
+  box-shadow: 5px 5px 4px 6px  rgba(32, 13, 156, 0.5); 
+  padding: 30px;
+}*/
+
+/* General styling for all sections */
+.section {
+  margin: 20px 0; /* Space between sections */
+  border-radius: 8px; /* Rounded corners */
+  transition: box-shadow 0.3s; /* Smooth transition for hover effect */
+}
+
+.section:hover {
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+/* Specific styling for each section */
+.section1 {
+  background-color: rgba(138, 0, 0, 0.05);
+  box-shadow: 2px 2px 8px rgba(138, 0, 0, 0.3);
+  padding: 30px;
+}
+
+.section2 {
+  background-color: rgba(222, 142, 12, 0.05);
+  box-shadow: 2px 2px 8px rgba(222, 142, 12, 0.3);
+  padding: 30px;
+}
+
+.section3 {
+  background-color: rgba(221, 255, 1, 0.05);
+  box-shadow: 2px 2px 8px rgba(221, 255, 1, 0.3);
+  padding: 30px;
+}
+
+.section4 {
+  background-color: rgba(2, 137, 22, 0.05);
+  box-shadow: 2px 2px 8px rgba(2, 137, 22, 0.3);
+  padding: 30px;
+}
+
+.section5 {
+  background-color: rgba(32, 13, 156, 0.05);
+  box-shadow: 2px 2px 8px rgba(32, 13, 156, 0.3);
+  padding: 30px;
+}
+
+
 h1, h2, h3 {
   font-family: "Sora", sans-serif;
   font-weight: 700;
@@ -37,6 +119,12 @@ h1, h3 {
 }
 
 h2 {
+  font-size: 3rem;
+  text-align: center;
+  margin-block-end: 0;
+}
+
+h4 {
   font-size: 3rem;
   text-align: center;
   margin-block-end: 0;
@@ -140,7 +228,9 @@ footer ul {
   padding: 0;
   display: flex;
   justify-content: center;
+  justify-content: space-around;
 }
+
 
 footer a {
   font-family: "Sora", sans-serif;
@@ -183,15 +273,22 @@ footer .link-icon {
 /* Slideshow */
 #content {
   margin: 40px auto 10px;
-  border: 10px solid #90b4ce;
+
   width: 400px;
   height: 266px;
   position: relative;
+  overflow: hidden;
 }
 
 #content img {
-  position: absolute;
-  width: 100%;
+  max-width: 100%; /* Ensures the image doesn't grow beyond the width of the container */
+  max-height: 100%; /* Ensures the image doesn't grow beyond the height of the container */
+  display: block; /* Removes any additional line-height or spaces */
+  margin: auto; /* Centers the image if it's smaller than the container */
+  position: absolute; /* This helps in centering the image vertically */
+  top: 50%; /* Vertical center align */
+  left: 50%; /* Horizontal center align */
+  transform: translate(-50%, -50%); /* Adjusts for exact centering */
 }
 
 #links {
@@ -266,4 +363,16 @@ footer .link-icon {
 
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,1);
+}
+
+.padded-video {
+  padding: 20px; /* Adjust as needed */
+  display: block; /* This makes the video behave like a block element */
+  margin: 0 auto; /* This centers the video if it's smaller than its container */
+}
+
+.padded-video2 {
+  padding: 20px; /* Adjust as needed */
+  display: block; /* This makes the video behave like a block element */
+  margin: 0 auto; /* This centers the video if it's smaller than its container */
 }
